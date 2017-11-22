@@ -153,22 +153,23 @@ eventbrite: 40189132778           # optional: alphanumeric key for Eventbrite re
 </p>
 
 
-
-<p>
-  <strong>Before Attending:</strong>:
-* Please register by following the above link.  Space is limited.
-* Registration is open to University of Tennessee affiliated faculty, staff, and students <strong>only</strong>.
-* Please ensure you have installed the necessary software on your computer before arriving
-* Please email  {% if page.contact %}
-    {% for contact in page.contact %}
-      {% if forloop.last and page.contact.size > 1 %} if you have any special dietary needs or requests.
-</p>
 <!--
   CONTACT EMAIL ADDRESS
 
   Display the contact email address set in the configuration file.
 -->
 <p id="contact">
+
+    <strong>Before Attending:</strong>:
+* Please register by following the above link.  Space is limited.
+* Registration is open to University of Tennessee affiliated faculty, staff, and students <strong>only</strong>.
+* Please ensure you have installed the necessary software on your computer before arriving
+* Please email  {% if page.contact %}
+    {% for contact in page.contact %}
+      {% if forloop.last and page.contact.size > 1 %} if you have any special dietary needs or requests.
+
+    </br>
+    
   <strong>Contact</strong>:
   Please email
   {% if page.contact %}
